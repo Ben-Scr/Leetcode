@@ -4,35 +4,34 @@
 
 namespace BenScr::RomanToInt {
 	class Solution {
-		const std::unordered_map<char, int> romanTable{
-	{ 'I', 1},
-	{ 'V', 5},
-	{ 'X', 10},
-	{ 'L', 50},
-	{ 'C', 100},
-	{ 'D', 500 },
-	{ 'M', 1000 },
-		};
-
 	public:
 		int romanToInt(std::string s) {
-			int result = 0;
-			int last = 0;
+            auto value = [](char c) -> int {
+                switch (c) {
+                case 'I': return 1;
+                case 'V': return 5;
+                case 'X': return 10;
+                case 'L': return 50;
+                case 'C': return 100;
+                case 'D': return 500;
+                case 'M': return 1000;
+                default:  return 0;
+                }
+                };
 
-			for (const auto c : s) {
-				if (romanTable.contains(c)) {
-					int current = romanTable.at(c);
+            int result = 0;
+            int last = 0;
 
-					if (current > last) {
-						result -= last * 2;
-					}
+            for (char c : s) {
+                int current = value(c);
+                if (current == 0) continue;
 
-					result += current;
-					last = current;
-				}
-			}
+                if (current > last) result -= 2 * last;
+                result += current;
+                last = current;
+            }
 
-			return result;
+            return result;
 		}
 	};
 }

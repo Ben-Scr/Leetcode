@@ -7,20 +7,19 @@ namespace BenScr::TwoSum {
     {
     public:
 		std::vector<int> twoSum(const std::vector<int> nums, int target) {
-			std::unordered_map<int, int> dictionary;
+           std::unordered_map<int, int> indexByValue;
 
-			for (int i = 0; i < nums.size(); i++)
-				dictionary.emplace(nums[i], i);
+            for (int i = 0; i < nums.size(); ++i) {
+                int needed = target - nums[i];
 
-			for (int i = 0; i < nums.size(); i++) {
-				int missing = target - nums[i];
+                if (indexByValue.count(needed)) {
+                    return { indexByValue[needed], i };
+                }
 
-				if (dictionary.contains(missing) && dictionary[missing] != i) {
-					return { i, dictionary[missing] };
-				}
-			}
+                indexByValue[nums[i]] = i;
+            }
 
-			return std::vector<int>{};
+            return {};
 		}
     };
 }

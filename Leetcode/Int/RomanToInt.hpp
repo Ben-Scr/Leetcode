@@ -3,9 +3,9 @@
 #include <unordered_map>
 
 namespace BenScr::RomanToInt {
-	class Solution {
-	public:
-		int romanToInt(std::string s) {
+    class Solution {
+    public:
+        int romanToInt(std::string s) {
             auto value = [](char c) -> int {
                 switch (c) {
                 case 'I': return 1;
@@ -32,6 +32,6 @@ namespace BenScr::RomanToInt {
             }
 
             return result;
-		}
-	};
+        }
+    };
 }

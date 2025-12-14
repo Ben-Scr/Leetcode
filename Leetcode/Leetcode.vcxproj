@@ -130,6 +130,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Array\ContainsDuplicate.hpp" />
     <ClInclude Include="Array\Rotate.hpp">
       <SubType>
       </SubType>
@@ -142,6 +143,9 @@
       <SubType>
       </SubType>
     </ClInclude>
+    <ClInclude Include="Int\CountPrimes.hpp" />
+    <ClInclude Include="Int\HammingWeight.hpp" />
+    <ClInclude Include="Int\IsPowerOfThree.hpp" />
     <ClInclude Include="Int\ReverseInt.hpp">
       <SubType>
       </SubType>
@@ -158,6 +162,7 @@
       <SubType>
       </SubType>
     </ClInclude>
+    <ClInclude Include="String\FizzBuzz.hpp" />
     <ClInclude Include="String\LongestCommonPrefix.hpp">
       <SubType>
       </SubType>

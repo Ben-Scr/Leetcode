@@ -3,11 +3,10 @@
 #include <unordered_map>
 
 namespace BenScr::TwoSum {
-    class Solution
-    {
+    class Solution {
     public:
-		std::vector<int> twoSum(const std::vector<int> nums, int target) {
-           std::unordered_map<int, int> indexByValue;
+        std::vector<int> twoSum(std::vector<int>& nums, int target) {
+            std::unordered_map<int, int> indexByValue;
 
             for (int i = 0; i < nums.size(); ++i) {
                 int needed = target - nums[i];
@@ -20,6 +19,6 @@ namespace BenScr::TwoSum {
             }
 
             return {};
-		}
+        }
     };
 }

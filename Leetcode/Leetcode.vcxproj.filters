@@ -80,5 +80,8 @@
     <ClInclude Include="Array\MoveZeros.hpp">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="Array\IsValidSudoku.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

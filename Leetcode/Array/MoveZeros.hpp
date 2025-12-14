@@ -10,7 +10,7 @@ namespace BenScr::MoveZeros {
 
 			for (int i = 0; i < nums.size(); i++) {
 				if (nums[i] != 0) {
-					nums[currentIndex++] = i;
+					nums[currentIndex++] = nums[i];
 				}
 			}
 

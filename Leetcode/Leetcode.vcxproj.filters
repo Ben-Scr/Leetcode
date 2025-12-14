@@ -68,5 +68,8 @@
     <ClInclude Include="Int\HammingWeight.hpp">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="Array\PlusOne.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

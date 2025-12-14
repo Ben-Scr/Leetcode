@@ -1,7 +1,7 @@
 #pragma once
 #include <bitset>
 
-namespace BenScr::HammingWeigh {
+namespace BenScr::HammingWeight {
 	class Solution {
 	public:
         int hammingWeight(int n) {

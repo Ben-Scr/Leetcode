@@ -131,6 +131,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Array\ContainsDuplicate.hpp" />
+    <ClInclude Include="Array\Intersect.hpp">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Array\MoveZeros.hpp">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="Array\PlusOne.hpp" />
     <ClInclude Include="Array\Rotate.hpp">
       <SubType>
